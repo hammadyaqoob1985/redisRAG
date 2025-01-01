@@ -1,14 +1,6 @@
 spring:
   application:
     name: starter
-  data:
-    redis:
-      host: ${REDIS_HOST}
-      port: ${REDIS_PORT}
-      password: ${REDIS_PASSWORD}
-      client-name: JEDIS
-      timeout: 3000
-      username: ${REDIS_USERNAME}
   ai:
     openai:
       temperature: 0.3
@@ -25,3 +17,8 @@ spring:
           modelUri: https://huggingface.co/intfloat/e5-small-v2/resolve/main/model.onnx
       tokenizer:
         uri: https://huggingface.co/intfloat/e5-small-v2/raw/main/tokenizer.json
+redis:
+  host: ${REDIS_HOST}
+  port: ${REDIS_PORT}
+  password: ${REDIS_PASSWORD}
+  username: ${REDIS_USERNAME}
